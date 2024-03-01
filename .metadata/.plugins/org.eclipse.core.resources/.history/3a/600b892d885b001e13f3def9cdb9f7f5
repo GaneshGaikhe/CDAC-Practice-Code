@@ -1,0 +1,69 @@
+
+public class Solution {
+	
+public static void main(String[] args) {
+	String s="my name is ganesh";
+	//character 
+	
+	
+	
+	String [] arr=s.split("\\s");
+	System.out.println(arr.length);
+	String result="";
+	for(int i=arr.length-1;i>=0;i--)
+	{
+		result+=arr[i]+" ";
+		System.out.print(arr[i]+" ");		
+	}
+	System.out.println();
+	System.out.println(result);
+	
+
+	
+	char [] sarr=result.toCharArray();
+	 char first=sarr[0];
+	 first=Character.toTitleCase(first);
+	 sarr[0]=first;
+	 
+	 for(int i=0;i<sarr.length;i++)
+	 {
+		 if(sarr[i]==' ')
+		 {
+			 char sample=sarr[i+1];
+			 sample=Character.toUpperCase(sample);
+			 sarr[i+1]=sample;
+		 }
+	 }
+	 System.out.println();
+	for(int i=0;i<sarr.length;i++)
+	{
+		System.out.print(sarr[i]);
+	}
+	
+	
+	
+	
+	
+	
+//	char first= sarr[0];
+//	first=Character.toUpperCase(first);
+//	sarr[0]=first;
+//	for(int i=0;i<sarr.length;i++)
+//	{
+//		if(sarr[i]==' ')
+//		{
+//			char  sample=sarr[i+1];
+//			sample=Character.toUpperCase(sample);
+//			sarr[i+1]=sample;	
+//		}
+//
+//	}
+//	
+//	for(int i=0;i<sarr.length;i++)
+//	{
+//		System.out.print(sarr[i]);
+//	}
+}
+	
+
+}

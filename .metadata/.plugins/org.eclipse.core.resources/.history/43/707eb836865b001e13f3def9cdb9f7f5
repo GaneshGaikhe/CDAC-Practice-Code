@@ -1,0 +1,25 @@
+
+public class Solution {
+	
+public static void main(String[] args) {
+	String s="my name is ganesh";
+	//character 
+
+	char [] sarr=s.toCharArray();
+	
+	
+
+	for(int i=0;i<sarr.length;i++)
+	{
+		if(sarr[i]==' ')
+		{
+			char  sample=sarr[i+1];
+			sample=Character.toUpperCase();
+			sarr[i+1]=sample;	
+		}
+
+	}
+}
+	
+
+}

@@ -1,0 +1,42 @@
+
+public class Solution {
+	
+public static void main(String[] args) {
+	String s="my name is ganesh";
+	//character 
+	
+	
+	String [] arr=s.split("\\s");
+	System.out.println(arr.length);
+	for(int i=arr.length-1;i>=0;i--)
+	{
+		System.out.println(arr[i]);
+	}
+	
+	
+	
+	//char [] sarr=s.toCharArray();
+	
+	
+//	char first= sarr[0];
+//	first=Character.toUpperCase(first);
+//	sarr[0]=first;
+//	for(int i=0;i<sarr.length;i++)
+//	{
+//		if(sarr[i]==' ')
+//		{
+//			char  sample=sarr[i+1];
+//			sample=Character.toUpperCase(sample);
+//			sarr[i+1]=sample;	
+//		}
+//
+//	}
+//	
+//	for(int i=0;i<sarr.length;i++)
+//	{
+//		System.out.print(sarr[i]);
+//	}
+}
+	
+
+}

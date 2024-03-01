@@ -1,0 +1,31 @@
+public class Solution{
+public static void main(string[] args)
+	{
+
+		String s="ganeshhhhhh";
+		Map<Character,Integer>maps=new HashMap<>();
+		for(int i=0li<s.length();i++)
+		{
+			if(maps.containsKey(s.charAt(i))
+			{
+				maps.put(s.charAt(i),maps.get(s.charAt(i))+1);
+			}
+			else
+			{
+				maps.put(s.charAt(i),1);
+			}
+	
+		}	
+		
+		for(Map.Entry<Character,Integer>entry:maps.entrySet())
+		{
+			System.out.println(entry.getKet()+" "+entry.getValue());
+			'
+
+
+		}	
+
+
+	}
+
+}

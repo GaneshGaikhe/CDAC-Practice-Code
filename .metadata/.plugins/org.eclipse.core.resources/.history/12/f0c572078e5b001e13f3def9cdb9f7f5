@@ -1,0 +1,162 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Solution {
+	
+public static void main(String[] args) {
+//	String s="my name is ganesh";
+//	//character 
+//	
+//	System.out.println(s.length());
+//	System.out.println(s);
+//	String [] arr=s.split("\\s");
+//	System.out.println(arr.length);
+//	String result="";
+//	for(int i=arr.length-1;i>=0;i--)
+//	{
+//		result+=arr[i]+" ";
+//		System.out.print(arr[i]+" ");		
+//	}
+//	System.out.println();
+//	System.out.println(result);
+//	result=result.trim();
+//
+//	
+//	char [] sarr=result.toCharArray();
+//	 char first=sarr[0];
+//	 first=Character.toTitleCase(first);
+//	 sarr[0]=first;
+//	 System.out.println(sarr.length);
+//	 for(int i=0;i<sarr.length;i++)
+//	 {
+//		 if(sarr[i]==' ')
+//		 {
+//			 char sample=sarr[i+1];
+//			 sample=Character.toUpperCase(sample);
+//			 sarr[i+1]=sample;
+//		 }
+//	 }
+//	 System.out.println();
+//	for(int i=0;i<sarr.length;i++)
+//	{
+//		System.out.print(sarr[i]);
+//	}
+//	
+//	
+	
+	
+	
+	
+//	char first= sarr[0];
+//	first=Character.toUpperCase(first);
+//	sarr[0]=first;
+//	for(int i=0;i<sarr.length;i++)
+//	{
+//		if(sarr[i]==' ')
+//		{
+//			char  sample=sarr[i+1];
+//			sample=Character.toUpperCase(sample);
+//			sarr[i+1]=sample;	
+//		}
+//
+//	}
+//	
+//	for(int i=0;i<sarr.length;i++)
+//	{
+//		System.out.print(sarr[i]);
+//	}
+	
+	
+	
+//	
+//	String s="sdfghjhgfdsasdfghjzzzzzzzzzzzzzzzzzzhgfds";
+//	Map<Character,Integer> maps=new HashMap<>();
+//	for(int i=0;i<s.length();i++)
+//	{
+//		if(maps.containsKey(s.charAt(i)))
+//		{
+//			maps.put(s.charAt(i),maps.get(s.charAt(i))+1);
+//		}
+//		else
+//		{
+//			maps.put(s.charAt(i),1);
+//		}
+//	}
+//	
+//	int maxcount=0;
+//	char maxchar=0;
+//	for(Map.Entry<Character,Integer>entry:maps.entrySet())
+//	{
+//		if(entry.getValue()>maxcount)
+//		{
+//			maxcount=entry.getValue();
+//			maxchar=entry.getKey();
+//		}
+//		System.out.println(entry.getKey()+"   "+entry.getValue());
+//	}
+//	System.out.println(maxchar+"  "+maxcount);
+//	
+//	
+	
+
+
+
+
+
+String u=">>>>>>>>>>>>>>>";
+	if(u.length()==0)
+	{
+		System.out.println("no");
+		return;
+	}
+	Map<Character,Integer>maps=new HashMap<>();
+	for(int i=0;i<u.length();i++)
+	{
+		if(maps.containsKey(u.charAt(i)))
+		{
+			maps.put(u.charAt(i),maps.get(u.charAt(i))+1);
+		}else
+		{
+			maps.put(u.charAt(i),1);
+		}
+		
+	}
+
+	
+	char [] carr=u.toCharArray();
+	int [] arr=new int [maps.size()];
+	int i=0;
+	for(Map.Entry<Character,Integer>entry:maps.entrySet())
+	{
+		arr[i]=entry.getValue();
+		i++;
+	}
+	Arrays.sort(arr);
+	int maxcount=arr[arr.length-1];
+	int size=carr.length;
+
+	if(size==maxcount)
+	{
+		System.out.println(0);
+	}
+	else
+	{
+		System.out.println(size-maxcount);
+	}	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+	
+
+}
